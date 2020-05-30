@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="DATA.Models"
+                   assembly="DATA">
+
+  <!-- Mappings for class 'Order' -->
+  <class name="Product" table="`ProductsAPI`" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ProductID" />
+      <generator class="identity" />
+    </id>
+
+    <property name="Description" />
+
+    <property name="Name" />
+
+  </class>
+
+</hibernate-mapping>

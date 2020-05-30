@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+
+  <!-- an ISessionFactory instance -->
+  <session-factory>
+    <!-- properties -->
+    <property name="connection.connection_string">
+      Server=.; Initial catalog=NHCookbook; Persist security info = true; user id = sa; password = password@1;
+    </property>
+    <property name="show_sql">true</property>
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <property name="dialect">NHibernate.Dialect.MsSql2012Dialect</property>
+
+    <!-- mapping files -->
+    <!--<mapping assembly="DATA" />-->
+
+  </session-factory>
+
+</hibernate-configuration>
